@@ -38,7 +38,7 @@ Download a minimal validation set for [Imagenet2012](http://www.image-net.org/ch
 
 > **Note:** User is responsible for the use of the downloaded content and compliance with any copyright licenses.
 
-{% include codeHeader.html %
+{% include codeHeader.html %}
 ```sh
 python -m ck pull repo:ck-env
 python -m ck install package:imagenet-2012-val-min

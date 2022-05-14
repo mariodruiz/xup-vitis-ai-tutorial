@@ -14,7 +14,7 @@ You can download model files (board specific pre-compiled or board independent s
 
 Execute the following commands to download the U200 specific pre-compiled files:
 
-{% include codeHeader.html %
+{% include codeHeader.html %}
 ```sh
 cd
 cd Vitis-AI_1_4_1/models/AI-Model-Zoo/
