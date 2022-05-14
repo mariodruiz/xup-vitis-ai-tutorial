@@ -39,7 +39,7 @@ Download a minimal validation set for [Imagenet2012](http://www.image-net.org/ch
 > **Note:** User is responsible for the use of the downloaded content and compliance with any copyright licenses.
 
 {% include codeHeader.html %}
-```sh {data-copyable=true}
+```sh
 python -m ck pull repo:ck-env
 python -m ck install package:imagenet-2012-val-min
 python -m ck install package:imagenet-2012-aux --tags=from.berkeley
@@ -52,7 +52,7 @@ We will use the pretrained `Inception-v1` network with the Tensorflow framework 
 
 Download the model source files.
 
-```sh {data-file="assets/scripts/copyCode.js" data-copyable=true}
+```sh
 cd /workspace/models/AI-Model-Zoo/
 python3 downloader.py
 ```
