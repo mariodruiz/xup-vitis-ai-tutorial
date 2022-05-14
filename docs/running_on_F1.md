@@ -31,7 +31,9 @@ Type **tf inceptionv1** and hit Enter. The available selections will be displaye
 Note `1` is for the board independent source files, `7` is for the U200 specific compiled files, `2` to `6` are for the other boards specific options.
 
 Type **7** and hit Enter to download the tar file (inception_v1_tf-u200-u250-r1.4.0.tar.gz). Extract the downloaded file to get `inception_v1_tf` directory and associated files.
-```
+
+{% include codeHeader.html %}
+```sh
 tar -xvf inception_v1_tf-u200-u250-r1.4.0.tar.gz
 ```
 
