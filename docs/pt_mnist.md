@@ -10,7 +10,7 @@ In the following steps you will clone the `Vitis-AI-Tutorials` Git repository in
 
 Open a new terminal window.
 
-```sh {data-copyable=true}
+```sh
 cd
 git clone https://github.com/Xilinx/Vitis-AI-Tutorials.git
 cp -r Vitis-AI-Tutorials/Design_Tutorials/09-mnist_pyt/ Vitis-AI_1_4_1/.
