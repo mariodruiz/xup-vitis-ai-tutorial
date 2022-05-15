@@ -2,7 +2,7 @@
 const codeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge');
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
-
+/*
 copyCodeButtons.forEach((copyCodeButton, index) => {
     const code = codeBlocks[index].innerText;
 
@@ -22,14 +22,14 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
         setTimeout(() => { copyCodeButton.classList.remove('copied'); }, 2000);
     });
 });
+*/
 
-
-const copyableCodeBlocks = document.querySelectorAll('code[data-copyable="true"]');
+const copyableCodeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge');
 copyableCodeBlocks.forEach((codeBlock) => {
     const code = codeBlock.innerText;
 
     const copyCodeButton = document.createElement('button');
-    copyCodeButton.className = 'copy-code-button fs-sm';
+    copyCodeButton.className = 'copy-code-button';
     copyCodeButton.innerText = copyToClipboardButtonStrings.default;
     copyCodeButton.setAttribute('aria-label', copyToClipboardButtonStrings.ariaLabel);
     copyCodeButton.type = 'button';
