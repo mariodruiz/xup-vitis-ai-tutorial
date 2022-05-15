@@ -10,12 +10,13 @@ In the following steps you will clone the `Vitis-AI-Tutorials` Git repository in
 
 Open a new terminal window.
 
-```sh
+```sh {data-copyable=true}
 cd
 git clone https://github.com/Xilinx/Vitis-AI-Tutorials.git
 cp -r Vitis-AI-Tutorials/Design_Tutorials/09-mnist_pyt/ Vitis-AI_1_4_1/.
 cd Vitis-AI_1_4_1/09-mnist_pyt/files
 ```
+
 ## Edit run_all.sh
 
 Edit `run_all.sh` to define AWS F1 as the target machine on which the application will run. Remove all lines in the `compile` section and then add
@@ -79,6 +80,7 @@ In the docker window, make sure the current directory is `/workspace/09-mnist_pt
 cd /workspace/09-mnist_pyt/files
 source run_all.sh
 ```
+
 When done, it will have `CNN_aws.xmodel` file generated in the `build/target_aws` directory under the current directory. It will also copy the `app_mt.py`, Python application, and `images` directory.
 
 Note that the shell script will go through three stages of training (Epoch): write the trained model `f_model.pth` into the `./build/float_model` directory; quantize the model and generate `CNN_int.xmodel` in the `./build/quant_model/` directory; and finally generate the DPU compatible `CNN_aws.xmodel` in the `./build/target_aws` directory
