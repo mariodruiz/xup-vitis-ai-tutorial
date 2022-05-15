@@ -24,6 +24,13 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
 });
 */
 
+const copyToClipboardButtonStrings = {
+    default: 'Copy',
+    ariaLabel: 'Copy to clipboard',
+    copied: 'Copied',
+};
+
+
 const copyableCodeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge');
 copyableCodeBlocks.forEach((codeBlock) => {
     const code = codeBlock.innerText;
